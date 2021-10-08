@@ -23,7 +23,7 @@ function imageView() {
   for (let i = 0; i < imageList.length; i++) {
     bcImg[i].style.backgroundImage = `url(${imageList[i]})`;
 
-    bcImg[i].addEventListener("mouseover", function (e) {
+    bcImg[i].addEventListener("click", function (e) {
       big.style.backgroundImage = `url(${imageList[e.target.innerHTML]})`;
     });
   }
